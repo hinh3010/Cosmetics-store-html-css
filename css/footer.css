@@ -1,0 +1,98 @@
+.footer {
+    background-color: var(--black-cl-1);
+    padding-top: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer .row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.footer .col {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+}
+
+.footer__title {
+    color: var(--white-cl-1);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer__link,
+.footer__text {
+    display: block;
+    color: var(--white-cl-2);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 6px 0;
+    align-items: center;
+    font-weight: 300;
+}
+
+.footer__link:hover {
+    color: var(--white-cl-1);
+}
+
+.footer__text i,
+.footer__link i {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-right: 8px;
+}
+
+.social-group {
+    display: flex;
+}
+
+.social-item {
+    margin-right: 12px;
+    background-color: var(--black-cl-2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+
+.social-item i {
+    font-size: 1.8rem;
+    color: var(--white-cl-1);
+    margin: auto;
+}
+
+.social-item:hover {
+    background-color: var(--white-cl-1);
+    transition: all 0.3s;
+}
+
+.social-item:hover i {
+    color: var(--black-cl-2);
+    transition: all 0.3s;
+}
+
+.send-email {
+    background-color: var(--white-cl-1);
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.send-email__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+    flex-grow: 1;
+}
+
+.send-email__link {
+    margin: auto;
+    font-size: 1.8rem;
+    color: var(--black-cl-1);
+    padding-right: 12px;
+}

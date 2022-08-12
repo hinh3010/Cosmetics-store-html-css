@@ -1,0 +1,112 @@
+.header {
+    height: var(--hight-header);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    /* background-color: var(--white-cl-1); */
+    background-color: #444444;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--hight-header-top);
+}
+
+.header__nav {
+    height: var(--hight-header-nav);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__nav-item.product-nav::after {
+    width: 176px;
+    height: 30px;
+    position: absolute;
+    right: -70;
+    bottom: -20px;
+    content: "";
+    display: block;
+}
+
+.header__nav-link {
+    display: block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--white-cl-1);
+    padding: 0 44px;
+    line-height: 5rem;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.header__nav-link:hover {
+    color: var(--default-cl);
+    transition: all 0.3s;
+}
+
+/* ---Submenu---- */
+
+.sub-nav-wrap {
+    position: absolute;
+    background-color: var(--white-cl-1);
+    padding: 12px 0;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transform-origin: top left;
+    will-change: opacity transform;
+    animation: fadeInScale linear 0.3s;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 99;
+}
+
+.sub-nav {
+    width: 200px;
+}
+
+.header__nav-item:hover .sub-nav-wrap {
+    display: flex;
+}
+
+.sub-nav__link {
+    display: block;
+    font-size: 1.6rem;
+    padding: 14px 12px;
+    color: var(--black-cl-1);
+}
+
+.sub-nav__link.heading {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sub-nav__link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header__nav-list .header__nav-item.authen-form {
+    display: none;
+}
+
+.header__nav .nav__search {
+    display: none;
+}

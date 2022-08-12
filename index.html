@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/slide.css" />
+        <link rel="stylesheet" href="./css/product.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/animation.css" />
+    </head>
+
+    <body>
+        <!-- header render tu layout.js -->
+        <header class="header scrolling" id="myHeader"></header>
+
+        <!-- slide -->
+        <div class="main__slice">
+            <div class="slider">
+                <div
+                    class="slide active"
+                    style="background-image: url(./img/slider/slide7.jpg)"
+                >
+                    <div class="container">
+                        <div class="caption">
+                            <h1>Giảm giá 30%</h1>
+                            <p>Giảm giá cực sốc trong tháng 6!</p>
+                            <a href="#sanpham" class="btn btn--default"
+                                >Xem ngay</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="slide active"
+                    style="background-image: url(./img/slider/slide8.png)"
+                >
+                    <div class="container">
+                        <div class="caption">
+                            <h1>Giảm giá 30%</h1>
+                            <p>Giảm giá cực sốc trong tháng 6!</p>
+                            <a href="#sanpham" class="btn btn--default"
+                                >Xem ngay</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="slide active"
+                    style="background-image: url(./img/slider/slide9.jpg)"
+                >
+                    <div class="container">
+                        <div class="caption">
+                            <h1>Giảm giá 30%</h1>
+                            <p>Giảm giá cực sốc trong tháng 6!</p>
+                            <a href="#sanpham" class="btn btn--default"
+                                >Xem ngay</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- controls  -->
+            <div class="controls">
+                <div class="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main" id="sanpham">
+            <div class="main__tabnine">
+                <div class="grid wide">
+                    <!-- Tab items -->
+                    <div class="tabs">
+                        <div class="tab-item active">Bán Chạy</div>
+                        <div class="tab-item">Giá tốt</div>
+                        <div class="tab-item">Mới Nhập</div>
+                        <div class="line"></div>
+                    </div>
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <div id="container_banchay" class="row"></div>
+                        </div>
+                        <div class="tab-pane">
+                            <div id="container_giatot" class="row"></div>
+                        </div>
+                        <div class="tab-pane">
+                            <div id="container_moinhap" class="row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer render tu layout.js -->
+        <footer id="footer" class="footer"></footer>
+
+        <script src="./js/tabs.js"></script>
+        <script src="./js/slide.js"></script>
+        <script type="module" src="./components/banChay.js"></script>
+        <script type="module" src="./components/giaTot.js"></script>
+        <script type="module" src="./components/moiNhap.js"></script>
+        <script type="module" src="./components/layout.js"></script>
+    </body>
+</html>
