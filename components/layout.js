@@ -132,6 +132,7 @@ header.innerHTML = `
                             alt=""
                         />
                     </a>
+                    <h1 style="font-size:30px ; color : width">Tiktok</h1>
                 </div>
             </div>
             <div class="header__nav" style="padding-bottom: 20px">
